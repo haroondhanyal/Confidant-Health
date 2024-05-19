@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "allure-commandline": "^2.29.0",
+    "init": "^0.1.2",
+    "xpath": "^0.0.34"
+  },
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "cypress-xpath": "^2.0.1",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "test": "npx cypress run --spec 'cypress/e2e/TestCases/**/*.cy.js'",
+    "cypress": "npx cypress run --browser=chrome --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:edge": "npx cypress run --browser=edge --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:electron": "npx cypress run --browser=electron --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "browser:firefox": "npx cypress run --browser=firefox --headed --spec 'cypress/e2e/TestCases/**/*.cy.js' --reporter mocha-allure-reporter",
+    "test:all-browsers": "npm run browser:chrome & npm run browser:edge & npm run browser:electron & npm run browser:firefox",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "name": "provider",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

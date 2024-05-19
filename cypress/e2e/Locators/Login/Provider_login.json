@@ -1,0 +1,7 @@
+{
+    "ProviderLoginPageLocators": {
+      "email_text": "//input[@name='email']",
+      "password_text": "//input[@name='password']",  
+      "LoginButton_text": "//button[normalize-space()='Login']"
+    }
+  }

@@ -1,0 +1,5 @@
+npx cypress run // runs cypress in terminal
+
+npx cypress opn // open the cypress terminal
+
+npm run report:allure // to generate allure report

@@ -1,0 +1,29 @@
+{
+    "AddNewMemberLocators":{
+        "dashboardSelectionMember_text":"//span[normalize-space()='Members']",
+        "addMemberButton_text":"//button[normalize-space()='Add member']",
+        "firstName_text":"//input[@name='firstName']",
+        "lastName_text":"//input[@name='lastName']",
+        "radioButton_Gender1":"//input[@value='male']",
+        "radioButton_Gender2":"//input[@value='female']",
+        "radioButton_Gender3":"//input[@value='intersex']",
+        "email_text":"//input[@name='email']",
+        "sendInvite_checkbox":"//input[@name='sendInvite']",
+        "phoneNumber_Dropdown":"//div[@class='flag-dropdown jss2322']",
+        "countrySelection":"//div[@title='Pakistan: + 92']//div[@class='flag pk']",
+        "number_text":"//input[@placeholder='1 (702) 123-4567']",
+        "dob_Selection":"//input[@placeholder='mm/dd/yyyy']",
+        "addressLine1_text":"//input[@name='address1']",
+        "addressLine2_text":"//input[@name='address2']",
+        "city_text":"//input[@name='city']",
+        "selectState_Dropdown":"//div[@id='mui-component-select-state']",
+        "stateName_text":"//div[normalize-space()='Colorado']",
+        "zipCode_text":"//input[@name='zipCode']",
+        "referralSource_Selection":"",
+        "primaryInterests_selection":"",
+        "Cancel_Button":"//button[normalize-space()='Cancel']",
+        "addMember":"//button[normalize-space()='Add member']",
+        "Add":".jss302 > .MuiButton-contained"
+    }
+}
+
