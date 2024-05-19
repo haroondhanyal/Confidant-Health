@@ -3,3 +3,24 @@ npx cypress run // runs cypress in terminal
 npx cypress opn // open the cypress terminal
 
 npm run report:allure // to generate allure report
+
+
+Following are the commands for the first time using github to publish project
+# Set global user email and name
+git config --global user.email "rajaharoon235@outlook.com"
+git config --global user.name "haroondhanyal"
+
+# Initialize Git repository
+git init
+
+# Add files to staging
+git add .
+
+# Commit changes
+git commit -m "Initial commit"
+
+# Add remote repository URL (replace with your GitHub repo URL)
+git remote add origin https://github.com/haroondhanyal/Confidant-Health.git
+
+# Push to GitHub
+git push -u origin master
