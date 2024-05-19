@@ -28,6 +28,9 @@ git add .
 # Commit changes
 git commit -m "Initial commit"
 
+git pull origin main / master
+git push origin main / master
+
 # Add remote repository URL (replace with your GitHub repo URL)
 git remote add origin https://github.com/haroondhanyal/Confidant-Health.git
 
