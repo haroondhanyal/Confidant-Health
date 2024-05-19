@@ -4,6 +4,15 @@ npx cypress opn // open the cypress terminal
 
 npm run report:allure // to generate allure report
 
+npm run test:all-browsers       
+
+/// it will run project on all browsers
+
+one by one run use 
+npm run browser:chrome
+npm run browser:firefox
+npm run browser:electron
+
 
 Following are the commands for the first time using github to publish project
 # Set global user email and name
@@ -22,5 +31,11 @@ git commit -m "Initial commit"
 # Add remote repository URL (replace with your GitHub repo URL)
 git remote add origin https://github.com/haroondhanyal/Confidant-Health.git
 
+ git pull origin main /// will fetch changes to the system 
+
 # Push to GitHub
 git push -u origin master
+
+// To clone my project from github
+git clone https://github.com/haroondhanyal/Confidant-Health.git
+
