@@ -1,0 +1,17 @@
+set CYPRESS_ENV=sit1; npx cypress open // open cypress in the browser
+set CYPRESS_ENV=sit1; npx cypress run // run  in terminal
+set CYPRESS_ENV=staging; npx cypress open --browser chrome  , electron , firefox ,edge   ( to run on specific browser as well)
+ 
+ // use this to run on sit 1
+
+
+ set CYPRESS_ENV=staging; npx cypress open // open the cypress in the browser
+ set CYPRESS_ENV=staging; npx cypress run // run in the terminal
+// for the staging
+
+set CYPRESS_ENV=prod; npx cypress open      // open inn browser 
+set CYPRESS_ENV=prod; npx cypress run // run  in terminal 
+// for the prod env
+
+
+/// we can use     npx cypress open also for simple run 

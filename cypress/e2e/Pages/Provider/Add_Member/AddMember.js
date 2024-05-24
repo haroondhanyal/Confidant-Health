@@ -38,7 +38,7 @@ export class AddMember{
         cy.wait(2000)
     }
     phoneNumberDropdown(){
-        cy.xpath(AddNewMemberElements.AddNewMemberLocators.phoneNumber_Dropdown).click()
+        cy.get(AddNewMemberElements.AddNewMemberLocators.phoneNumber_Dropdown).click()
         cy.wait(2000)
     }
     countrySelection(){

@@ -1,6 +1,6 @@
 npx cypress run // runs cypress in terminal
 
-npx cypress opn // open the cypress terminal
+npx cypress open // open the cypress terminal
 
 npm run report:allure // to generate allure report
 
@@ -18,7 +18,7 @@ Following are the commands for the first time using github to publish project
 # Set global user email and name
 git config --global user.email "rajaharoon235@outlook.com"
 git config --global user.name "haroondhanyal"
-
+// name or email which is linked with VS code and Github 
 # Initialize Git repository
 git init
 

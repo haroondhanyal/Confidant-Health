@@ -1,0 +1,6 @@
+{
+    "email":"aneeqaprovider@qa.com",
+    "password":"Test@123",
+    "expected":"Dashboard"
+
+}

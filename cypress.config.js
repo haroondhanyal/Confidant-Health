@@ -1,4 +1,21 @@
 const { defineConfig } = require("cypress");
+           
+const fs = require('fs');
+
+function getEnvConfig(env) {
+  const path = `./cypress.env.${env}.json`;
+  if (fs.existsSync(path)) {
+    return require(path).env;
+  } else {
+    throw new Error(`No configuration file found for environment: ${env}`);
+  }
+} 
+
+const environment = process.env.CYPRESS_ENV || 'sit1'; // Default to 'sit1' if CYPRESS_ENV is not set
+const envConfig = getEnvConfig(environment);
+
+console.log('Loaded environment:', environment);
+console.log('Environment configuration:', envConfig);
 
 module.exports = defineConfig({
   "projectId": "Confident Project Version1",
@@ -9,6 +26,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    baseUrl: envConfig.baseUrl,
   },
   fixturesFolder: 'cypress/e2e/fixtures',
   video: true,
@@ -29,6 +47,7 @@ module.exports = defineConfig({
       json: false
     },
   },
+
+  env: envConfig
 });
 
-3

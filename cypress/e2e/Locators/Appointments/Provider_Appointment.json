@@ -1,0 +1,31 @@
+{
+    "ProviderAppointmentScheduleLocators": {
+      "sidebar_Schedule": "//span[normalize-space()='Schedule']",
+      "newAppointment":"//button[normalize-space()='New appointment']",
+      "searchBar":"//input[@placeholder='Search']",
+      "memberSelections":"//span[normalize-space()='Philp Salt']",
+      "memberSelection":"//div[contains(@class, 'MuiBox-root')]//img[@title='Philp Salt']",
+      "continueTOnext":"//button[normalize-space()='Continue']",
+      "careTeam1":".list-item > :nth-child(3)",
+      "careTeam2":".list-item > :nth-child(2)",
+      "memberContinue":"//button[normalize-space()='Continue']",
+      "sessionSelection2":"//div[normalize-space()='$450']",
+      "sessionSelection1":"//div[normalize-space()='$161']",
+      "sessionContinue":"//button[normalize-space()='Continue']",
+      "startInstantSession":"//div[normalize-space()='Instant session']",
+      "startInstantSession_button":"//button[normalize-space()='Start instant session']",
+      "backAfterScheduled":".jss1151 > .MuiButton-contained",
+      "cancelInstantSession":"//button[normalize-space()='Cancel']",
+      "specificDateSession":"//div[normalize-space()='Specific date']",
+      "dateSelection":"//button[normalize-space()='29']",
+      "timeSlotSelection":"//div[normalize-space()='11:15 pm']",
+      "timeSlotContinue_button":"//button[normalize-space()='Continue']",
+      "timeSlotAppointmentCancel":"//button[normalize-space()='Cancel']",
+      "scheduleSession":"//button[normalize-space()='Schedule']",
+      "scheduleSessionCancel":"//button[normalize-space()='Cancel']",
+      "ScheduleLink":"//div[normalize-space()='Scheduling link']"
+
+
+      
+    }
+  }
