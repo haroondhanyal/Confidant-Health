@@ -1,1 +1,7 @@
 # Confidant-Health
+Confidant Health is a comprehensive healthcare management platform designed to streamline the scheduling and management of appointments for healthcare providers and members. With dedicated roles for Admin, Provider, and Member, the platform offers tailored functionalities to meet the unique needs of each user type.
+Administrators have full access to the system, allowing them to oversee and manage various aspects of the healthcare facility. This includes the ability to add appointments, manage payments, and oversee other administrative tasks crucial for the smooth operation of the healthcare facility.
+Providers, including doctors, nurses, and other healthcare professionals, can utilize the platform to schedule appointments with patients efficiently. They have access to features that enable them to manage their schedules, view patient information, and initiate sessions as needed.
+Members, or patients, can conveniently schedule appointments with their healthcare providers through the platform. They have access to features that allow them to view available appointment slots, select preferred providers, and manage their appointments seamlessly.
+Confidant Health aims to enhance the healthcare experience for both providers and members by providing a user-friendly and efficient platform for appointment scheduling and management. By centralizing appointment-related tasks and offering role-specific functionalities, the platform simplifies healthcare administration and improves patient care delivery.
+
