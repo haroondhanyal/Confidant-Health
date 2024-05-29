@@ -27,6 +27,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: envConfig.baseUrl,
+     // I have define some test files that i can include to run in my project :
+   specPattern: [
+    // '**/*.spec.js',
+    '**/*.cy.js'
+    // '**/*.js'
+  ]
   },
   fixturesFolder: 'cypress/e2e/fixtures',
   video: true,
@@ -48,6 +54,7 @@ module.exports = defineConfig({
     },
   },
 
-  env: envConfig
+  env: envConfig,
+  
 });
 

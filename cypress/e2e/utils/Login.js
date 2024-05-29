@@ -36,10 +36,13 @@
 // // reason , i have multiple providers and i need to login with them i used it .
 // }
 ////////////  new implementation just for the project to use config  and use the base url and used specific commands 
+
 /// <reference types="Cypress"/>
 
 import { ProviderloginPage } from '../Pages/Login/Provider_Login/Provider_Login';
+import { AdminloginPage } from '../Pages/Login/Admin_Login/Admin_Login';
 
+// Provider role we will use this function 
 export function loginAsProvider(providersRole) {
   const Login_Credentials = new ProviderloginPage();
   const baseUrl = Cypress.env('baseUrl');
@@ -56,7 +59,35 @@ export function loginAsProvider(providersRole) {
 
   cy.visit(baseUrl);
   cy.wait(3000);
+  cy.xpath(Current_AppointmentDetailsLocators.AdminSelection).click()
   Login_Credentials.email(providerCredentials.email);
   Login_Credentials.password(providerCredentials.password);
   Login_Credentials.LoginButton();
+}
+// now for the admin role i have set this .....
+export function loginAsAdmin(adminRole) {
+  const Login_Credentials = new AdminloginPage();
+  const baseUrl = Cypress.env('baseUrl');
+  const adminCredentials = Cypress.env(adminRole); // Get credentials for the specified admin
+
+  console.log('Base URL:', baseUrl);
+  console.log('Admin Role:', adminRole);
+  console.log('Admin Credentials:', adminCredentials);
+
+  if (!adminCredentials) {
+    throw new Error(`No credentials found for admin role: ${adminRole}`);
+  }
+
+  cy.visit(baseUrl);
+  cy.wait(3000);
+  AdminSelection() /// i made the function below by default we have provider 
+  /// is selected but i use this function after visiting base url  select the Admin and select until login as admin 
+  cy.wait(3000);
+  Login_Credentials.email(adminCredentials.email);
+  Login_Credentials.password(adminCredentials.password);
+  Login_Credentials.LoginButton();
+}
+function AdminSelection() {
+  cy.xpath("//button[normalize-space()='Log in as Admin']").click();
+  cy.wait(4000);
 }

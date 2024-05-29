@@ -1,0 +1,20 @@
+{
+    "Current_AppointmentDetailsLocators": {
+      "AdminSelection": "//button[normalize-space()='Log in as Admin'] ",
+      "Select_Appointments": "//span[contains(text(),'Appointments')] ",
+      "Current_Appointments":"//span[normalize-space()='Current']",
+      "Search_Provider_Member":"//input[@placeholder='Search patients by name, phone, or email']",
+      "Open_Appointment":"//td[normalize-space()='30 Minute Telehealth Session - CPT'] ",
+      "Assign_Evaluations":"//button[normalize-space()='Assign evaluation']",
+      "searchEvaluations":"//input[@placeholder='Search']",
+      "Evaluation1":"//span[normalize-space()='Testing Skip DCT']",
+      "Evaluation2":"/span[normalize-space()='Coach Note - Coach Note - Coach Note - Coach Note']",
+      "Evaluation3":"//span[normalize-space()='AI Generated Exercise for Lauryn Hill']",
+      "AddSelected_btn":"//button[normalize-space()='Add selected']",
+      "CancelEvaluation":"//button[normalize-space()='Cancel']",
+      "MessageProvider":"//button[normalize-space()='Message member']",
+      "CancelAppointment":"//button[normalize-space()='Cancel appointment']  "
+     
+    }
+  }
+

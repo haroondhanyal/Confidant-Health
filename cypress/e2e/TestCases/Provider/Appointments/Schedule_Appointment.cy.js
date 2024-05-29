@@ -6,13 +6,13 @@ import { loginAsProvider } from "../../../utils/Login";
 
 const schedule_NewSession = new ScheduleSession();
 
-describe('Login As Provider ', () => {
+describe('Provider Scheduling Functionality', () => {
     beforeEach(() => {
       loginAsProvider('provider1'); 
     });
 
 
-    it('Schedule an Session with Member by Clark Kent  and Started a Instant Session ',()=>{
+    it('TC01: Schedule and start an instant session with a member',()=>{
       cy.fixture('Provider_appointment').then((data) => {
         schedule_NewSession.sidebar_Schedule();
         schedule_NewSession.newAppointment();

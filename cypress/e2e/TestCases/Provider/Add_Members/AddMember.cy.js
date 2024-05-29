@@ -5,7 +5,7 @@ import { loginAsProvider } from "../../../utils/Login";
 
 const Add_newMember = new AddMember();
 
-describe('Login As Provider ', () => {
+describe('Provider Member Management', () => {
     beforeEach(() => {
       loginAsProvider('provider2'); // i can use multiple providers here jus t call those numbers ( 1,2,3 and upto so on )
     });
@@ -23,7 +23,7 @@ describe('Login As Provider ', () => {
     //   })
 
 
-    it('Now login as Provider and Adds A new Member ',()=>{
+    it('TC01: Login as Provider and Add a New Member',()=>{
         // loginAsProvider(); 
         try {
           Add_newMember.dashboard_member();
