@@ -36,7 +36,6 @@
 // // reason , i have multiple providers and i need to login with them i used it .
 // }
 ////////////  new implementation just for the project to use config  and use the base url and used specific commands 
-
 /// <reference types="Cypress"/>
 
 import { ProviderloginPage } from '../Pages/Login/Provider_Login/Provider_Login';
@@ -59,7 +58,6 @@ export function loginAsProvider(providersRole) {
 
   cy.visit(baseUrl);
   cy.wait(3000);
-  cy.xpath(Current_AppointmentDetailsLocators.AdminSelection).click()
   Login_Credentials.email(providerCredentials.email);
   Login_Credentials.password(providerCredentials.password);
   Login_Credentials.LoginButton();
@@ -79,15 +77,15 @@ export function loginAsAdmin(adminRole) {
   }
 
   cy.visit(baseUrl);
-  cy.wait(3000);
-  AdminSelection() /// i made the function below by default we have provider 
+  AdminSelection() 
+  cy.wait(2000);
+  /// i made the function below by default we have provider 
   /// is selected but i use this function after visiting base url  select the Admin and select until login as admin 
-  cy.wait(3000);
+
   Login_Credentials.email(adminCredentials.email);
   Login_Credentials.password(adminCredentials.password);
   Login_Credentials.LoginButton();
 }
 function AdminSelection() {
   cy.xpath("//button[normalize-space()='Log in as Admin']").click();
-  cy.wait(4000);
 }

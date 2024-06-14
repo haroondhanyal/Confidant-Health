@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718359170634' stop='1718359190622'>
+    <name>Provider Login Functionality</name>
+    <title>Provider Login Functionality</title>
+    <test-cases>
+        <test-case start='1718359170634' status='passed' stop='1718359190622'>
+            <name>TC01: Login with valid credentials</name>
+            <title>TC01: Login with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718358843793' stop='1718358906716'>
+    <name>Provider Member Management</name>
+    <title>Provider Member Management</title>
+    <test-cases>
+        <test-case start='1718358843793' status='failed' stop='1718358906683'>
+            <name>TC01: Login as Provider and Add a New Member</name>
+            <title>TC01: Login as Provider and Add a New Member</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `.jss302 > .MuiButton-contained`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `.jss302 > .MuiButton-contained`, but never found it.
+                    at AddMember.addMemberButton (webpack://provider/./cypress/e2e/Pages/Provider/Add_Member/AddMember.js:97:11)
+                    at Context.eval (webpack://provider/./cypress/e2e/TestCases/Provider/Add_Members/AddMember.cy.js:47:24)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,2 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon May 13 23:24:41 PKT 2024","Mon May 13 23:26:15 PKT 2024","93734","","Provider Logins:","","Provider Logins:","Logs in with valid credentials","Logs in with valid credentials",""
+"failed","Fri Jun 14 14:57:35 PKT 2024","Fri Jun 14 14:58:31 PKT 2024","55743","","Admin Appointment Management","","Admin Appointment Management","TC01: Open a scheduled appointment and view appointment details","TC01: Open a scheduled appointment and view appointment details",""
+"broken","Fri Jun 14 14:59:05 PKT 2024","Fri Jun 14 14:59:27 PKT 2024","21448","","Provider Scheduling Functionality","","Provider Scheduling Functionality","TC01: Schedule and start an instant session with a member","TC01: Schedule and start an instant session with a member",""
+"passed","Fri Jun 14 14:59:30 PKT 2024","Fri Jun 14 14:59:50 PKT 2024","19988","","Provider Login Functionality","","Provider Login Functionality","TC01: Login with valid credentials","TC01: Login with valid credentials",""
+"failed","Fri Jun 14 14:58:34 PKT 2024","Fri Jun 14 14:59:02 PKT 2024","28303","","Provider Member Management","","Provider Member Management","TC01: Login as Provider and Add a New Member","TC01: Login as Provider and Add a New Member",""

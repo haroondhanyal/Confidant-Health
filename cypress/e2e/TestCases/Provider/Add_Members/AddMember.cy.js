@@ -7,7 +7,7 @@ const Add_newMember = new AddMember();
 
 describe('Provider Member Management', () => {
     beforeEach(() => {
-      loginAsProvider('provider2'); // i can use multiple providers here jus t call those numbers ( 1,2,3 and upto so on )
+      loginAsProvider('provider1'); // i can use multiple providers here jus t call those numbers ( 1,2,3 and upto so on )
     });
 
     // Catch any uncaught exceptions and prevent them from failing the test
@@ -25,6 +25,7 @@ describe('Provider Member Management', () => {
 
     it('TC01: Login as Provider and Add a New Member',()=>{
         // loginAsProvider(); 
+      cy.fixture('AddMember_provider').then((data)=>{
         try {
           Add_newMember.dashboard_member();
           Add_newMember.addMember_button();
@@ -53,6 +54,7 @@ describe('Provider Member Management', () => {
         
        
     })
+      })
 
    
   });

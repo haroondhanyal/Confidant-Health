@@ -1,7 +1,8 @@
 const { defineConfig } = require("cypress");
-           
 const fs = require('fs');
+const path = require('path');
 
+// Function to get environment-specific configuration
 function getEnvConfig(env) {
   const path = `./cypress.env.${env}.json`;
   if (fs.existsSync(path)) {
@@ -9,52 +10,42 @@ function getEnvConfig(env) {
   } else {
     throw new Error(`No configuration file found for environment: ${env}`);
   }
-} 
+}
 
-const environment = process.env.CYPRESS_ENV || 'sit1'; // Default to 'sit1' if CYPRESS_ENV is not set
+// Set the environment, defaulting to 'sit1'
+const environment = process.env.CYPRESS_ENV || 'sit1';
 const envConfig = getEnvConfig(environment);
 
 console.log('Loaded environment:', environment);
 console.log('Environment configuration:', envConfig);
 
 module.exports = defineConfig({
-  "projectId": "Confident Project Version1",
-  "viewportWidth": 1280,
-  "viewportHeight": 800,
+  projectId: 'sjnqhg',
+  viewportWidth: 1280,
+  viewportHeight: 800,
 
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // Implement node event listeners here if needed
+      return config; // Return the updated config object
     },
     baseUrl: envConfig.baseUrl,
-     // I have define some test files that i can include to run in my project :
-   specPattern: [
-    // '**/*.spec.js',
-    '**/*.cy.js'
-    // '**/*.js'
-  ]
+    specPattern: '**/*.cy.js'
   },
+
   fixturesFolder: 'cypress/e2e/fixtures',
   video: true,
   videosFolder: 'cypress/e2e/videos',
   screenshotsFolder: 'cypress/e2e/screenshots',
-
-  pageLoadTimeout:30000 ,
+  pageLoadTimeout: 30000,
   screenshots: true,
-
   screenshotOnRunFailure: true,
-  reporter: 'cypress-multi-reporters',
-  reporterOptions: {
-    reporterEnabled: 'mochawesome',
-    mochawesomeReporterOptions: {
-      reportDir: 'cypress/reports/mochawesome/testresults',
-      overwrite: false,
-      html: false,
-      json: false
-    },
-  },
 
+  reporter: 'mocha-allure-reporter',
+    reporterOptions: {
+      targetDir: 'allure-results'
+    },
+  
   env: envConfig,
   
 });
-

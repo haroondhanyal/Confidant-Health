@@ -1,98 +1,101 @@
 const ScheduleAppointmentSessions = require ("../../../Locators/Appointments/Provider_Appointment.json")
 
 export class ScheduleSession {
+    customWait() {
+        cy.wait(2000);  // i am using custom wait and using where we need
+    }
     sidebar_Schedule(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.sidebar_Schedule).click()
-        cy.wait(4000)     
+        this.customWait();       
     }
     newAppointment(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.newAppointment).click()
-        cy.wait(4000)     
+        this.customWait();        
     }
     searchBar(memName){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.searchBar).type(memName)
-        cy.wait(4000)     
+        this.customWait();         
     }
     // memberSelections(){
     //     cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.memberSelection).click()
-    //     cy.wait(4000)     
+    //     this.customWait();         
     // }
     memberSelection(){
-        cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.memberSelection).click()
-        cy.wait(4000)     
+        cy.get(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.memberSelection).click()
+        this.customWait();         
     }
     continueTOnext(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.continueTOnext).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     careTeam1(){
         cy.get(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.careTeam1).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     careTeam2(){
         cy.get(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.careTeam2).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     memberContinue(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.memberContinue).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
 
     sessionSelection1(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.sessionSelection1).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     sessionSelection2(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.sessionSelection2).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     sessionContinue(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.sessionContinue).click()
-        cy.wait(4000)     
+        this.customWait();        
     }
     startInstantSession(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.startInstantSession).click()
-        cy.wait(4000)     
+        this.customWait();        
     }
     startInstantSession_button(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.startInstantSession_button).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     cancelInstantSession(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.cancelInstantSession).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     specificDateSession(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.specificDateSession).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     dateSelection(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.dateSelection).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     timeSlotSelection(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.timeSlotSelection).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     timeSlotContinue_button(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.timeSlotContinue_button).click()
-        cy.wait(4000)     
+        this.customWait();        
     }
     timeSlotAppointmentCancel(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.timeSlotAppointmentCancel).click()
-        cy.wait(4000)     
+        this.customWait();       
     }
     scheduleSession(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.scheduleSession).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     scheduleSessionCancel(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.scheduleSessionCancel).click()
-        cy.wait(4000)     
+        this.customWait();      
     }
     ScheduleLink(){
         cy.xpath(ScheduleAppointmentSessions.ProviderAppointmentScheduleLocators.ScheduleLink).click()
-        cy.wait(4000)     
+        this.customWait();         
     }
     
 

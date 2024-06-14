@@ -1,73 +1,113 @@
 const CurrentAppointmentsAssignEval = require ('../../../Locators/Admin/Current_AppointmentDetails.json')
 
 export class CurrentAppointmentAssignEvaluations{
+    customWait() {
+        cy.wait(3000);  // i am using custom wait and using where we need
+    }
     AdminSelection(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.AdminSelection).click()
-        cy.wait(4000)     
+        this.customWait();    
     }
     Select_Appointments(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Select_Appointments).click()
-        cy.wait(4000)     
+        this.customWait();     
     }
     Current_Appointments(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Current_Appointments).click()
-        cy.wait(4000)     
+        this.customWait();   
     }
     Search_Provider1(pName1){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Search_Provider_Member).type(pName1)
-        cy.wait(4000)     
+        this.customWait();     
     }
     Search_Provider2(pName2){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Search_Provider_Member).type(pName2)
-        cy.wait(4000)     
+        this.customWait();     
     }
     Search_Member(mName){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Search_Provider_Member).type(mName)
-        cy.wait(4000)     
+        this.customWait();     
     }
     Open_Appointment(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Open_Appointment).click()
-        cy.wait(4000)     
+        this.customWait();     
     }
     Assign_Evaluations(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Assign_Evaluations).click()
-        cy.wait(4000)     
+        this.customWait();     
     }
     searchEvaluation1(evalName1){
-        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.searchEvaluations).type(evalName1)
-        cy.wait(4000)     
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.searchEvaluations).clear().type(evalName1)
+        this.customWait();     
     }
     searchEvaluation2(evalName2){
-        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.searchEvaluations).type(evalName2)
-        cy.wait(4000)     
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.searchEvaluations).clear().type(evalName2)
+        this.customWait();     
     }
     searchEvaluation3(evalName3){
-        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.searchEvaluations).type(evalName3)
-        cy.wait(4000)     
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.searchEvaluations).clear().type(evalName3)
+        this.customWait();     
     }
     Evaluation1(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Evaluation1).click()
-        cy.wait(4000)     
+        this.customWait();     
     }
     Evaluation2(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Evaluation2).click()
-        cy.wait(4000)     
+        this.customWait();     
     }
     Evaluation3(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.Evaluation3).click()
-        cy.wait(4000)     
+        this.customWait();     
     }
     AddSelected_btn(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.AddSelected_btn).click()
-        cy.wait(4000)     
+        this.customWait();    
     }
+    ViewEvaluation1(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.ViewEvaluation1).click()
+        this.customWait();    
+    }
+    ViewEvaluation2(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.ViewEvaluation2).click()
+        this.customWait();     
+    }
+    ViewEvaluation3(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.ViewEvaluation3).click()
+        this.customWait();    
+    }
+    deleteEvaluation1(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.deleteEvaluation1).click()
+        this.customWait();     
+    }
+    deleteEvaluation2(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.deleteEvaluation2).click()
+        this.customWait();    
+    }
+    deleteEvaluation3(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.deleteEvaluation3).click()
+        this.customWait();    
+    }
+    ViewExercise1(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.ViewExercise1).click()
+        this.customWait();     
+    }
+    ViewExercise2(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.ViewExercise2).click()
+        this.customWait(); 
+    }
+    ViewExercise3(){
+        cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.ViewExercise3).click()
+        this.customWait();     
+    }
+
     CancelEvaluation(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.CancelEvaluation).click()
-        cy.wait(4000)     
+        this.customWait();    
     }
     MessageProvider(){
         cy.xpath(CurrentAppointmentsAssignEval.Current_AppointmentDetailsLocators.MessageProvider).click()
-        cy.wait(4000)     
+        this.customWait();    
     }
     
 }

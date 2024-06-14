@@ -2,7 +2,15 @@ npx cypress run // runs cypress in terminal
 
 npx cypress open // open the cypress terminal
 
-npm run report:allure // to generate allure report
+
+npm run generate:allure //generate allure 
+npm run report:allure // open that report 
+
+
+npm run run:allure
+npm run clean:allure && npm run test:all-browsers && npm run generate:allure && npm run report:allure
+
+// to generate allure report
 
 npm run test:all-browsers       
 

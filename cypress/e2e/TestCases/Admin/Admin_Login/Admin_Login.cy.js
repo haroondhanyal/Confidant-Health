@@ -31,8 +31,17 @@ describe('Admin Appointment Management', () => {
         openCurrent_Appointment.searchEvaluation3(data.evalName3)
         openCurrent_Appointment.Evaluation3()
         openCurrent_Appointment.AddSelected_btn()
+        openCurrent_Appointment.ViewEvaluation1()
+        // openCurrent_Appointment.ViewEvaluation2()
+        // openCurrent_Appointment.ViewEvaluation3()
+        // openCurrent_Appointment.deleteEvaluation1()
+        // openCurrent_Appointment.deleteEvaluation2()
+        // openCurrent_Appointment.deleteEvaluation3()
+        // openCurrent_Appointment.ViewExercise1()
+        // openCurrent_Appointment.ViewExercise2()
+        // openCurrent_Appointment.ViewExercise3()
         // openCurrent_Appointment.CancelEvaluation()
-        openCurrent_Appointment.MessageProvider()    
+        // openCurrent_Appointment.MessageProvider()    
               
     });
   

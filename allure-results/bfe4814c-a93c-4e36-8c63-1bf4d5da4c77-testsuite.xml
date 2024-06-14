@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718359237523' stop='1718359277331'>
+    <name>Admin Appointment Management</name>
+    <title>Admin Appointment Management</title>
+    <test-cases>
+        <test-case start='1718359237523' status='failed' stop='1718359277252'>
+            <name>TC01: Open a scheduled appointment and view appointment details</name>
+            <title>TC01: Open a scheduled appointment and view appointment details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: ` //td[normalize-space()='1 Hour Telehealth Session']`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: ` //td[normalize-space()='1 Hour Telehealth Session']`, but never found it.
+                    at CurrentAppointmentAssignEvaluations.Open_Appointment (webpack://provider/./cypress/e2e/Pages/Admin/Appointments/Current_Appointments.js:32:11)
+                    at Context.eval (webpack://provider/./cypress/e2e/TestCases/Admin/Admin_Login/Admin_Login.cy.js:25:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
