@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718371059006' stop='1718371083352'>
+    <name>Provider Scheduling Functionality</name>
+    <title>Provider Scheduling Functionality</title>
+    <test-cases>
+        <test-case start='1718371059006' status='broken' stop='1718371083351'>
+            <name>TC01: Schedule and start an instant session with a member</name>
+            <title>TC01: Schedule and start an instant session with a member</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.
+                
+                https://on.cypress.io/click</message>
+                <stack-trace>CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.
+                
+                https://on.cypress.io/click
+                    at mouseAction (https://sit1.web.confidanthealth.com/__cypress/runner/cypress_runner.js:112021:68)
+                    at Context.click (https://sit1.web.confidanthealth.com/__cypress/runner/cypress_runner.js:112188:14)
+                    at wrapped (https://sit1.web.confidanthealth.com/__cypress/runner/cypress_runner.js:138024:19)
+                From Your Spec Code:
+                    at ScheduleSession.newAppointment (webpack://provider/./cypress/e2e/Pages/Provider/Appointment/Schedule_Appointment.js:12:97)
+                    at Context.eval (webpack://provider/./cypress/e2e/TestCases/Provider/Appointments/Schedule_Appointment.cy.js:18:28)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

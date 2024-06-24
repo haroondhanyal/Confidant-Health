@@ -1,7 +1,7 @@
 {
     "Current_AppointmentDetailsLocators": {
-      "AdminSelection": "//button[normalize-space()='Log in as Admin'] ",
-      "Select_Appointments": "//span[contains(text(),'Appointments')] ",
+      "AdminSelection": "//button[normalize-space()='Log in as Admin']",
+      "Select_Appointments": "//span[contains(text(),'Appointments')]",
       "Current_Appointments":"//span[normalize-space()='Current']",
       "Search_Provider_Member":"//input[@placeholder='Search appointment by member and provider']",
       "Open_Appointment":" //td[normalize-space()='1 Hour Telehealth Session']",

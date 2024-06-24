@@ -24,4 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-xpath';
+// cypress/support/index.js
+import 'cypress-file-upload';
+
 // import "allure-cypress/commands";

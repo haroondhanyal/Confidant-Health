@@ -1,0 +1,33 @@
+{
+    "Add_Provider_Admin":{
+        "Select_Provider":"//span[contains(text(),'Providers')]",
+        "Add_Provider":"//button[normalize-space()='Add provider']",
+        "Enter_Name":"//input[@placeholder='Enter name']",
+        "Provider_Code":"//input[@placeholder='Enter provider code']",
+        "Gender_Selection1":"//input[@value='MALE']",
+        "Gender_Selection2":"//input[@value='FEMALE']",
+        "Email_Provider":"//input[@placeholder='Enter email']",
+        "Password":"//input[@placeholder='Enter password']",
+        "Country_Selection":"//div[@title='United States: + 1']",
+        "Phone_Selection":"//span[normalize-space()='Pakistan']",
+        "Enter_PhoneNumber":"//input[@placeholder='1 (702) 123-4567']",
+        "SignOffRole":"//div[@id='mui-component-select-signOffRole']",
+        "SignOffRole1":"//div[normalize-space()='Associate']",
+        "SignOffRole2":"//div[normalize-space()='Supervisor']",
+        "Designation":"//div[@id='mui-component-select-designation']",
+        "SelectDesignation1":"//div[normalize-space()='Physician']",
+        "SelectDesignation2":"//div[normalize-space()='Care Manager']",
+        "SelectDesignation3":"//div[normalize-space()='Coach']",
+        "Select_State":"",
+        "Select_Specialities1":"",
+        "Select_Specialities2":"",
+        "Select_Specialities3":"",
+        "Approach":"//textarea[@placeholder='Enter approaches']",
+        "About":"//textarea[@placeholder='Enter about provider']",
+        "Profile_Photo":"//span[normalize-space()='Upload a file']",
+        "Provider_AddButton":"//button[normalize-space()='Add provider']"
+
+
+
+    }
+}

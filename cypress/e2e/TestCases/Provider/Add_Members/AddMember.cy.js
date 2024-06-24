@@ -44,6 +44,8 @@ describe('Provider Member Management', () => {
           Add_newMember.selectStateDropdown();
           Add_newMember.stateName(data.state);
           Add_newMember.enterZipCode(data.zipCode);
+          Add_newMember.Referral_Source()
+          Add_newMember.Primary_interests()
           Add_newMember.addMemberButton();
 
           cy.wait(4000);

@@ -98,5 +98,27 @@ export class AddMember{
         cy.wait(2000) //// using css selector for this because xpath for Add members cant work we have the 
                      ///// same xpath for the ADd member here
     }
+    Referral_Source(){
+        cy.get('#mui-16').click()
+        cy.get('#mui-16-option-1').click()
+        cy.wait(100)
+        cy.get('#mui-16').click()
+        cy.get('#mui-16-option-4').click()
+        cy.wait(100)
+        cy.get('#mui-16').click()
+        cy.get('#mui-16-option-2').click()
+        cy.wait(100)
+
+    }
+    Primary_interests(){
+        cy.get('#mui-18').click()
+        cy.get('#mui-18-option-1').click()
+        cy.wait(100)
+        cy.get('#mui-18').click()
+        cy.get('#mui-18-option-2').click()
+        cy.wait(100)
+
+    }
+
 
 }

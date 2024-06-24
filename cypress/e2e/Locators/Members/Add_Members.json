@@ -23,7 +23,7 @@
         "primaryInterests_selection":"",
         "Cancel_Button":"//button[normalize-space()='Cancel']",
         "addMember":"//button[normalize-space()='Add member']",
-        "Add":".jss302 > .MuiButton-contained"
+        "Add":".jss303 > .MuiButton-contained"
     }
 }
 

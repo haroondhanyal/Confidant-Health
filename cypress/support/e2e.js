@@ -16,7 +16,21 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 require('cypress-xpath')
-// import '@shelex/cypress-allure-plugin'; // commit this 
+// import '@shelex/cypress-allure-plugin';
+// Cypress.on('test:after:run', (test, runnable) => {
+//     if (test.state === 'failed') {
+//       const screenshotFileName = `${runnable.parent.title} -- ${test.title} (failed).png`;
+//       const videoFileName = `${runnable.parent.title} -- ${test.title}.mp4`;
+//       const screenshotPath = `cypress/screenshots/${Cypress.spec.name}/${screenshotFileName}`;
+//       const videoPath = `cypress/videos/${Cypress.spec.name}/${videoFileName}`;
+  
+//       cy.task('log', `Attaching screenshot: ${screenshotPath}`);
+//       cy.task('log', `Attaching video: ${videoPath}`);
+  
+//       cy.allure().addAttachment('Screenshot', screenshotPath, 'image/png');
+//       cy.allure().addAttachment('Video', videoPath, 'video/mp4');
+//     }
+//   }); // commit this 
 
 
 // Alternatively you can use CommonJS syntax:
