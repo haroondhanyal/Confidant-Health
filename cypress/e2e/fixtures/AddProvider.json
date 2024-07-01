@@ -1,9 +1,30 @@
-{
-    "name":"Mark Chapman",
-    "Provider_Code":"458745",
-    "Email":"chapman123@gmail.com",
-    "Password":"Test@123",
-    "Phone":"3315190251",
-    "Approach":"We need to Discuss the Following, and Consider Few things in the Life.",
-    "About":"Speed of Light is important why we need that"
-}
+[
+    {
+      "name": "Mark Chapman",
+      "Provider_Code": "458745",
+      "Email": "chapman123@gmail.com",
+      "Password": "Test@123",
+      "Phone": "3315190251",
+      "Approach": "We need to Discuss the Following, and Consider Few things in the Life.",
+      "About": "Speed of Light is important why we need that"
+    },
+    {
+      "name": "Jane Doe",
+      "Provider_Code": "1126655",
+      "Email": "jane.doe@gmail.com",
+      "Password": "Password123",
+      "Phone": "3333190251",
+      "Approach": "Discuss the new project requirements.",
+      "About": "Importance of teamwork and collaboration."
+    },
+    {
+      "name": "John Smith",
+      "Provider_Code": "789012",
+      "Email": "john.smith@gmail.com",
+      "Password": "Password456",
+      "Phone": "1234567890",
+      "Approach": "Focus on customer satisfaction.",
+      "About": "The importance of customer feedback."
+    }
+  ]
+  

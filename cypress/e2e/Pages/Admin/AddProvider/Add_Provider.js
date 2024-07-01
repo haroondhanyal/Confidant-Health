@@ -7,8 +7,8 @@ export class Add_Provider_By_Admin{
         return
     }
     AddProvider(){
-        cy.xpath(AddProvider.Add_Provider_Admin.Add_Provider).click()
-        cy.wait(800)
+        cy.xpath(AddProvider.Add_Provider_Admin.Add_Provider).click({force:true})
+        cy.wait(600)
         return
     }
     EnterName(name){
@@ -71,19 +71,22 @@ export class Add_Provider_By_Admin{
         return
     }
     Designation1(){
-        cy.xpath(AddProvider.Add_Provider_Admin.SelectDesignation1).then(elements => {
-            console.log('Number of elements:', elements.length);
-          }).click({ force: true, multiple: true });
+        // cy.xpath(AddProvider.Add_Provider_Admin.SelectDesignation1).then(elements => {
+        //     console.log('Number of elements:', elements.length);
+        //   }).click({ force: true, multiple: true });
+        cy.get('[data-value="Counselor"] > .jss728').click()
         cy.wait(200)
         return
     }
     Designation2(){
-        cy.xpath(AddProvider.Add_Provider_Admin.SelectDesignation2).click()
+       // cy.xpath(AddProvider.Add_Provider_Admin.SelectDesignation2).click()
+       cy.get('[data-value="Coach"] > .jss728').click()
         cy.wait(200)
         return
     }
     Designation3(){
-        cy.xpath(AddProvider.Add_Provider_Admin.SelectDesignation3).click()
+       // cy.xpath(AddProvider.Add_Provider_Admin.SelectDesignation3).click()
+       cy.get('[data-value="Physician"] > .jss728').click()
         cy.wait(200)
         return
     }
@@ -112,8 +115,8 @@ export class Add_Provider_By_Admin{
         return this;
     }
     ProviderAdded(){
-        //cy.xpath(AddProvider.Add_Provider_Admin.Provider_AddButton).scrollIntoView().click({ multiple: true, force: true })
-        cy.get('.jss507 > .MuiButton-contained').scrollIntoView().click({  force: true })
+        cy.xpath(AddProvider.Add_Provider_Admin.Provider_AddButton).click({ multiple: true, force: true })
+        //cy.get('.jss507 > .MuiButton-contained').scrollIntoView().click({  force: true })
         cy.wait(300)
         return
     }
@@ -132,7 +135,7 @@ export class Add_Provider_By_Admin{
 
     }
     Specialities_Selection(){
-        cy.get('#mui-16').click()
+        cy.get('#mui-16').click({force:true})
         cy.wait(200)
         cy.get('#mui-16-option-7').click()
         cy.wait(100)

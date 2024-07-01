@@ -2,6 +2,7 @@
 
 import {AddMember} from "../../../Pages/Provider/Add_Member/AddMember"
 import { loginAsProvider } from "../../../utils/Login";
+import { generateMemberData } from "../../../utils/dataGenerator";
 
 const Add_newMember = new AddMember();
 
@@ -25,8 +26,10 @@ describe('Provider Member Management', () => {
 
     it('TC01: Login as Provider and Add a New Member',()=>{
         // loginAsProvider(); 
-      cy.fixture('AddMember_provider').then((data)=>{
+      //cy.fixture('AddMember_provider').then((data)=>{
+        const data = generateMemberData();
         try {
+          
           Add_newMember.dashboard_member();
           Add_newMember.addMember_button();
           Add_newMember.memberFirstName(data.fName);
@@ -59,7 +62,7 @@ describe('Provider Member Management', () => {
       })
 
    
-  });
+  //});
     /// Below Code for the assertions we used to verify, but i can not used assertions in try catch which is not recommended
 
 //   it('Now login as Provider and Adds A new Member', () => {

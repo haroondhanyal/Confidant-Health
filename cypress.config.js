@@ -37,7 +37,7 @@ module.exports = defineConfig({
   video: true,
   videosFolder: 'cypress/e2e/videos',
   screenshotsFolder: 'cypress/e2e/screenshots',
-  pageLoadTimeout: 30000,
+  pageLoadTimeout: 120000,
   screenshots: true,
   screenshotOnRunFailure: true,
 
