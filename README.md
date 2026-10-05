@@ -1,6 +1,6 @@
 # Confidant Health Automation Framework
 
-## Mobile Functional & Regression Automation
+## Web Functional & Regression Automation
 
 The `master` branch of Confidant Health contains the mobile automation baseline used to validate application functionality through structured and repeatable automated test scenarios.
 
